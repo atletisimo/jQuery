@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+body{
+    font-family: sans-serif;
+}
+#menu{
+    background: #fbd850;
+    text-align: center;
+
+
+}
+#menu ul{
+    display: inline-flex;
+    list-style-type: none;
+}
+#menu ul li{
+   width: 120px;
+    margin: 10px;
+    padding: 5px;
+}
+#menu ul li a{
+    text-decoration: none;
+    color:deeppink;
+}
+.active:hover{
+    background: #b81900;
+    border-radius: 3px;
+}
+.sub1{
+    display: none;
+}
+#menu ul li:hover .sub1{
+    display: block;
+    position:absolute;
+    margin-top:15px;
+    margin-left: -15px;
+
+}
+#menu ul li:hover .sub1 ul li {
+width:150px;
+    padding:10px;
+    background: greenyellow;
+    border-radius: 10px;
+    text-align: left;
+}
+.sub1{
+    display:none;
+}
+</style>
+</head>
+<body style="background: darkseagreen">
+<h1 style="text-align:center">TRACK AND FIELD</h1>
+<h2 style="text-align: center">100 and 200m sprinter</h2>
+<h3>Tamara Ackovska</h3>
+
+<div id="menu">
+    <ul>
+        <li class="active"><a href="#">Diet</a>
+        <div class="sub1">
+            <ul>
+                <li><a href="#">Diet plan </a></li>
+<li><a href="#">Coffee Diet</a></li>
+            </ul>
+        </div>
+        </li>
+
+        <li class="active"><a href="#">Training</a>
+        <div class="sub1">
+            <ul>
+                <li><a href="#">Gym</a> </li>
+                <li><a href="#">On track</a></li>
+            </ul>
+        </div>
+        </li>
+    <li class="active"><a href="#">Supplements</a>
+    <div class="sub1">
+        <ul>
+            <li><a href="#">Proteins</a></li>
+            <li><a href="#">Preworkouts</a> </li>
+            <li><a href="#">Weight loss pills</a></li>
+        </ul>
+    </div>
+    </li>
+
+
+
+
+
+
+
+
+    </ul>
+</div>
+
+<img src="tamka.jpg" style="width: 250px;height: 250px" alt="slika">
+</body>
+</html>
